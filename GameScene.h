@@ -6,6 +6,8 @@
 #include "Input.h"
 #include "Object3d.h"
 #include "Sprite.h"
+#include "Light.h"
+
 #include <DirectXMath.h>
 
 /// <summary>
@@ -70,4 +72,7 @@ private: // メンバ変数
 	Object3d* objGround = nullptr;
 	Object3d* objFighter = nullptr;
 	Object3d* objSphere = nullptr;
+
+	// ライト
+	Light* light = nullptr;
 };

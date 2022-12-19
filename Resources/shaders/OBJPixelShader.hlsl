@@ -5,7 +5,10 @@ SamplerState smp : register(s0); // 0番スロットに設定されたサンプ�
 
 float4 main(VSOutput input) : SV_TARGET
 {
+	// テクスチャマッピング
     float4 texcolor = tex.Sample(smp, input.uv);
 	//return float4(texcolor.rgb * shade_color, texcolor.a * m_alpha);
-    return input.color;
+
+	// シェーディングによる色で描画
+    return input.color * texcolor;
 }

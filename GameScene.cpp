@@ -16,9 +16,11 @@ GameScene::~GameScene()
 	delete objSkydome;
 	delete objGround;
 	delete objFighter;
+	delete objSphere;
 	delete modelSkydome;
 	delete modelGround;
 	delete modelFighter;
+	delete modelSphere;
 	delete camera;
 	delete light;
 }

@@ -109,7 +109,7 @@ void Material::LoadTexture(
 		  (UINT)img->rowPitch,  // 1ラインサイズ
 		  (UINT)img->slicePitch // 1枚サイズ
 		);
-		assert(SUCCEEDED(result));
+		assert(SUCCEEDED(result)); 
 	}
 
 	// シェーダリソースビュー作成
